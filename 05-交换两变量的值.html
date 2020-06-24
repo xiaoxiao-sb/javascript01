@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+			 * 借助第三方变量交换两个变量的值
+			 */
+			var a = 1;
+			var b = 2;
+			var c;
+			//将a变量中的值复制一份再赋值给c
+			c = a;// c = 1    a = 1
+			a = b;// a = 2    b = 2
+			b = c;// b = 1    c = 1
+			alert(a);
+			alert(b);
+			alert(c);
+			
+			
+		</script>
+	</body>
+</html>

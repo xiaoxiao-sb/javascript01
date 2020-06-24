@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 800px;
+				height: 500px;
+				border: 1px solid #000;
+				margin: 100px auto 0;
+				/*相对定位*/
+				position: relative;
+			}
+			.box2{
+				width: 400px;
+				height: 200px;
+				border: 1px solid red;
+				margin: 100px auto 0;
+				/*相对定位*/
+				position: relative;
+			}
+			.s1{
+				width: 100px;
+				height: 50px;
+				background: red;
+				/*绝对定位*/
+				position: absolute;
+				left:0px;
+				top:0px;
+				/*right:0;
+				bottom:0;*/
+				z-index: 0;
+			}
+			.s2{
+				width: 100px;
+				height: 50px;
+				background: blue;
+				/*绝对定位*/
+				position: absolute;
+				left:0px;
+				top:0px;
+				z-index: -1;
+			}
+			/*
+			 * 相对定位配合绝对定位使用:(子绝父相)
+			 * 子父指的是标签是嵌套关系,子元素是绝对定位,离子元素最近的加了相对定位属性的祖先元素,
+			 * 此时子元素left,top的参考点是祖先元素左上
+			 * 此时子元素right,bottom的参考点是祖先元素右下
+			 * 
+			 * 当元素加了定位属性后,设置宽高起作用
+			 * 
+			 * 层级:z-index 取值范围是整数,默认层级是0
+			 * 当元素加了定位属性后,当层级相同时,后写的标签会压在先写标签的上面,
+			 * 当层级不同时,层级大的压在层级小的上面
+			 */
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+			<div class="box2">
+				
+				<span class="s1">span01</span>
+				<span class="s2">span02</span>
+			</div>
+			哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+		</div>
+	</body>
+</html>

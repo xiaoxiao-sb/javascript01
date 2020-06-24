@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			/*
+			 * 运算符(操作符):
+			 * 算数运算符: + - * /
+			 * 一元运算符: 一个操作数       ++  --
+			 * 前++和后++
+			 */
+
+			/*
+			 * 无论前加加还是后加加a都是自身加1
+			 * 
+			 * 
+			 */
+
+			//			var a = 1;
+			//a = a+1;//a++  自身加1再赋值给自己
+			//			a++;
+			//++a;
+			//console.log(a);
+
+			var a = 1;
+			//			var b = a++;
+			//console.log('a='+a);//2
+			//console.log('b='+b);//1
+			//var b = ++a;
+			//console.log('a='+a);//2
+			//console.log('b='+b);//2
+
+			//			var b = a++ +1;
+			//		    console.log('a='+a);//2
+			//			console.log('b='+b);//2
+			//			var b = ++a +1;
+			//		    console.log('a='+a);//2
+			//			console.log('b='+b);//3
+
+			//			var b = ++a + a;// a = a+1
+			//		    console.log('a='+a);//2
+			//			console.log('b='+b);//4
+
+			//			var b = ++a + a + a+1;
+			//		    console.log('a='+a);//2
+			//			console.log('b='+b);//7
+			//			var b = a++ + 1;
+			//		    console.log('a='+a);//2
+			//			console.log('b='+b);//2
+			//			var b = a++ + a;
+			//		    console.log('a='+a);//2
+			//			console.log('b='+b);//3
+
+			//			var b = a++ + a + a;
+			//		    console.log('a='+a);//2
+			//			console.log('b='+b);//5
+
+			//			var b = a++ + a + a++;
+			//		    console.log('a='+a);//3
+			//			console.log('b='+b);// 5
+			//			var b = a++ + a + a++ + 1;
+			//		    console.log('a='+a);//3
+			//			console.log('b='+b);// 6
+
+			//			var b = a++ + ++a + a;
+			//		    console.log('a='+a);//3
+			//			console.log('b='+b);// 7
+
+			//			var b = a++ + ++a + a++;
+			//		    console.log('a='+a);//4
+			//			console.log('b='+b);//7
+
+			//			var b = ++a + a++ + ++a + a + 1 + a++;
+			//			console.log('a='+a);//5
+			//			console.log('b='+b);// 17 
+			
+			
+//			var b = a++ + a + ++a + ++a + a++ + a;
+//			console.log('a=' + a); //5
+//			console.log('b=' + b); // 19 19
+		
+			var b = a++ + a++ + ++a + a++;
+			console.log('a=' + a); //5
+			console.log('b=' + b); // 11 9 9
+		</script>
+	</body>
+
+</html>

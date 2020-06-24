@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			console.log('==================数据类型转换=========================');
+			console.log('============其它类型转换成数值类型======================');
+			console.log('============parseInt()函数,可以转换成数值类型,并且可以向下取整=====不严格类型的转换=================');
+			console.log(parseInt('10'));//10
+			console.log(parseInt('10.98'));//10
+			console.log(parseInt('10abc'));//10
+			console.log(parseInt('10.98abc'));//10
+			console.log(parseInt('哈哈abc10.98'));//NaN
+			console.log(parseInt(true));//NaN
+			console.log(parseInt(false));//NaN
+			console.log(parseInt(undefined));//NaN
+			console.log(parseInt(null));//NaN
+			console.log('============parseFloat()函数,可以转换成数值类型======================');
+			console.log(parseFloat('10'));//10
+			console.log(parseFloat('10.99'));//10.99
+			console.log(parseFloat('10abc'));//10
+			console.log(parseFloat('10.99abc'));//10.99
+			console.log(parseFloat(true));//NaN
+			console.log(parseFloat(false));//NaN
+			console.log(parseFloat(undefined));//NaN
+			console.log(parseFloat(null));//NaN
+			console.log('============Number()函数,可以转换成数值类型=======严格类型===============');
+			console.log(Number('10'));//10
+			console.log(Number('10.09'));//10.99
+			console.log(Number('10abc'));//NaN
+			console.log(Number('10.99abc'));//NaN
+			console.log(Number(true));//1
+			console.log(Number(false));//0
+			console.log(Number(undefined));//NaN
+			console.log(Number(null));//0
+			console.log('============其它类型转换字符串类型======================');
+			console.log('============变量.toString(),可以转换成字符串类型======================');
+			
+			var num01 = 10;
+			var bool = true;
+			// undefined 和 null 没有toString这个函数,所以会报错
+//			var str01 = undefined;
+//			var str01 = null;
+			
+//			console.log(num01.toString());
+//			console.log(bool.toString());
+//			console.log(str01.toString());//报错
+			console.log('============String(),可以转换成字符串类型======================');
+			console.log(String(10));//10
+			console.log(String(10.99));//10
+			console.log(String(true));//true
+			console.log(String(undefined));//undefined
+			console.log(String(null));//null 
+			
+			console.log('============其它类型转换布尔类型======================');
+			console.log(Boolean(1));
+			console.log(Boolean(10));
+			console.log(Boolean(-5));
+			console.log(Boolean('哈哈'));
+			console.log(Boolean(' '));
+			//以上都是true
+			console.log(Boolean(''));
+			console.log(Boolean(0));
+			console.log(Boolean(undefined));
+			console.log(Boolean(null));
+			//以上都是false
+		</script>
+	</body>
+</html>

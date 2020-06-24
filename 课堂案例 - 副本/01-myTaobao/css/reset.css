@@ -1,0 +1,32 @@
+/*基本初始化设置*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; } 
+
+/* 当前字号的百分比*/
+h1, h2, h3, h4, h5, h6{ font-size:100%; } 
+/* 不倾斜*/
+em,i{ font-style:normal; } 
+ul, ol { list-style:none; } 
+s,del{
+	text-decoration:none;
+}
+/* img底部留白  */
+img{ display: block; } 
+
+table {
+	/* 1px边框*/
+	 border-collapse:collapse; 
+	 /* 单元格与单元格之间的距离       相当于cellspacing*/
+	 border-spacing:0; 
+	} 
+
+/* 网站的风格设置*/
+body{background-color: #f1f1f1;} 
+body, button, input, select, textarea { font:12px/1.5 tahoma, arial, \5b8b\4f53;color:#6C6C6C; }
+/*  outline:none; 去掉输入框轮廓线  */
+button, input, select, textarea { font-size:100%; outline:none;} 
+a { text-decoration:none; color:#6C6C6C;} 
+a:hover {color:#f40; } 
+
+.clearfix:after{content:".";display:block;height:0;visibility:hidden;clear:both;}
+/* 兼容ie6 */
+.clearfix{zoom:1;}

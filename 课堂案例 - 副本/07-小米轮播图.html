@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			.box{
+				width: 1226px ;
+				height: 460px;
+				background: pink;
+				margin: 100px auto 0;
+				position: relative;
+			}
+			.box img{
+				display: block;
+				
+			}
+			.box a{
+				display: block;
+			}
+			.nav{
+				width: 234px;
+				height: 460px;
+				/*background: #000;*/
+				/* 透明度  取值范围是0-1之间的小数 */
+				/*opacity: 0.2;*/
+				/* css3的属性  */
+				background: rgba(0,0,0,0.5);
+				position: absolute;
+				left:0;
+				top:0;
+			}
+			.box span{
+				width: 41px;
+				height: 69px;
+				line-height: 69px;
+				text-align: center;
+				font-size: 40px;
+				color:#fff;
+				background: rgba(0,0,0,0.7);
+				position: absolute;
+				left:234px;
+				top:50%;
+				margin-top: -35px;
+				cursor: pointer;
+			}
+			.box .rightBtn{
+				/* 设置之前的left值不生效 */
+				left:auto;
+				right:0;
+			}
+			.box span:hover{
+				background: rgba(0,0,0,0.3);
+			}
+			.box ol{
+				position: absolute;
+				right:35px;
+				bottom:25px;
+			}
+			.box ol li{
+				float:left;
+				width: 6px;
+				height: 6px;
+				background: #7d7469;
+				border: 2px solid #a8a198;
+				/* 圆形*/
+				border-radius: 50%;
+				margin-left: 10px;
+			}
+			.box ol li.current{
+				background: #e3dacf;
+				border-color:#8d8780;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li>
+					<a href="##">
+						<img src="banner.jpg" width="1226"/>
+					</a>
+				</li>
+			</ul>
+			<div class="nav"></div>
+			<span class="leftBtn"><</span>
+			<span class="rightBtn">></span>
+			<ol>
+				<li class="current"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</div>
+		
+	</body>
+</html>

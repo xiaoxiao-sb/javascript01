@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+			 * 布尔类型中的true可以转换成数值类型的1,false可以转换成数值类型的0
+			 * 字符串类型的数据和任何类型的数据进行相加操作都是拼接
+			 */
+			var num01 = 5;
+//			var num02;
+			console.log(num01 + '10');
+			console.log('5'+'20');
+			console.log(20 - '5');
+			console.log('10' - true);
+			console.log('10' + true);
+			console.log('10' + 5);
+			
+			//报错
+//			console.log('10' + num02);
+			var num02 = 30000;
+			var jibengongzi = 10000;
+			var jiangjin = 5000;
+			var  a = 5;
+			var  b = 6;
+			var c = '尚硅谷';
+			var d = '日元';
+			console.log('0318前端班平均薪资'+ jibengongzi + jiangjin);//(jibengongzi + jiangjin)
+			console.log('0318前端班平均薪资'+ a*b);
+			console.log('尚硅谷'+'0318前端班平均薪资30000元');
+			console.log(c+'0318前端班平均薪资'+num02+'元');// '+num02+'
+			console.log(''+c+'0318前端班平均薪资30000元');//  '+c+'
+			console.log(''+c+'0318前端班平均薪资30000'+d);// '+d+' 
+			console.log('0318前端班平均薪资'+(jibengongzi + jiangjin)+'欧元');// '+(jibengongzi + jiangjin)+'
+		</script>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 * 定位元素水平垂直居中:
+			 * 水平居中:设置元素的left:50%,移动父元素宽度的50%,再设置margin-left:负自身宽度的一半,
+			 *          向回走
+			 * 垂直居中:设置元素的top:50%,移动父元素高度的50%,再设置margin-top:负自身高度的一半,
+			 *          向回走
+			 */
+			.box{
+				width: 800px;
+				height: 500px;
+				border: 1px solid #000;
+				position: relative;
+			}
+			span{
+				width: 100px;
+				height: 50px;
+				background: pink;
+				position: absolute;
+				left:50%;
+				margin-left: -50px;
+				top:50%;
+				margin-top: -25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<span></span>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+			 * 字符串类型:  '哈哈' '呵呵' '嘿嘿abc12334'  '13688888888'  
+			 * 
+			 * 其它语言中:
+			 * string str01 = '哈哈';
+			 * 字符串长度: 变量.length可以获取字符串中字符的个数
+			 * 空字符串的长度是0
+			 * 字符串类型的数据,当是数字的时候,在进行乘除减的运算时,会先将字符串类型的数据
+			 * 隐式转换成数值类型的数据,再进行计算,结果也是数值类型的数据.
+			 * 字符串类型的数据在做相加运算的时候,是字符串的拼接
+			 * 字符串类型的数据和任何类型的数据进行相加操作都是拼接
+			 */
+			
+			var str01 = '明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1明天终于休息啦!a1';
+			console.log(str01.length);
+			var str02 = '2';
+			var str03 = '3';
+			var str04 = '呵呵';
+			console.log('2');
+			console.log(str02);
+		    console.log(str02 * str03);
+		    console.log(str02 - str03);
+		    console.log(str02 / str03);
+		    console.log(str04 - str03);//结果是NaN   not a number
+		    
+		    console.log('3'+'5');
+		    console.log(str04 + str03);
+		    var str05 = '';//空字符串
+		    console.log(str05.length);
+		</script>
+	</body>
+</html>
